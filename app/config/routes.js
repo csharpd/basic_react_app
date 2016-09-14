@@ -8,11 +8,15 @@ var hashHistory = ReactRouter.hashHistory;
 var IndexRoute = ReactRouter.IndexRoute;
 var Main = require('../components/Main');
 var Home = require("../components/Home");
+var PromptContainer = require('../containers/PromptContainer');
 
 var routes = (
   <Router history={hashHistory}>
     <Route path='/' component={Main}>
       <IndexRoute component={Home} />
+      <Route path='playerOne' header='Player One' component={PromptContainer} />
+      // :playerOne is a route param - this comes in key for the playercontainer logic later
+      <Route path='playerTwo/:playerOne' header='Player Two' component={PromptContainer} />
     </Route>
   </Router>
 );
