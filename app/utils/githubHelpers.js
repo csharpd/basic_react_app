@@ -56,6 +56,7 @@ var helpers = {
   battle: function (players) {
     var playerOneData = getPlayersData(players[0]);
     var playerTwoData = getPlayersData(players[1]);
+    // once player 1 and player 2 data resolve - calculate the scores
     return axios.all([playerOneData, playerTwoData])
       .then(calculateScores)
       .catch(function (err) {console.warn('Error in getPlayersInfo: ', err)})
