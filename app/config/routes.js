@@ -9,6 +9,7 @@ var IndexRoute = ReactRouter.IndexRoute;
 var Main = require('../components/Main');
 var Home = require("../components/Home");
 var PromptContainer = require('../containers/PromptContainer');
+var ConfirmBattleContainer = require('../containers/ConfirmBattleContainer');
 
 var routes = (
   <Router history={hashHistory}>
@@ -17,6 +18,8 @@ var routes = (
       <Route path='playerOne' header='Player One' component={PromptContainer} />
       // :playerOne is a route param - this comes in key for the playercontainer logic later
       <Route path='playerTwo/:playerOne' header='Player Two' component={PromptContainer} />
+      <Route path='battle' component={ConfirmBattleContainer} />
+
     </Route>
   </Router>
 );
