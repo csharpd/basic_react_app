@@ -1,15 +1,16 @@
-# basic_react_app
+# Github Battle
 
-npm install
+http://courses.reactjsprogram.com/courses/enrolled/reactjsfundamentals
 
-npm run production
+`npm install` to get dependacies
 
-or
-
-npm run start
+`npm run production` to set up production
 
 
-INstalls
+`npm run start` to run locally
+
+
+**Installs**
 npm install --save react-addons-css-transition-group
 npm install --save-dev css-loader
 style-loader
